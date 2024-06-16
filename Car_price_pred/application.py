@@ -5,8 +5,8 @@ import numpy as np
 app=Flask(__name__)
 
 
-model=pickle.load(open('C:\\Users\\Amol\\Desktop\\Machine Learning\\preparationForTest\\Car_price_pred\\LinearR_model.pkl','rb'))
-car_data=pd.read_csv('C:\\Users\\Amol\\Desktop\\Machine Learning\\preparationForTest\\Car_price_pred\\Cleaned_car.csv')
+model=pickle.load(open('LinearR_model.pkl','rb'))
+car_data=pd.read_csv('Cleaned_car.csv')
 
 @app.route('/')
 def index():
